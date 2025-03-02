@@ -32,6 +32,22 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.15.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.ibm</groupId>
+            <artifactId>ilog-cp</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/ILOG.CP.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ibm</groupId>
+            <artifactId>ilog-clpex</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/cplex.jar</systemPath>
+        </dependency>
     </dependencies>
 
 </project>
