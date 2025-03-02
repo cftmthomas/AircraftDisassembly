@@ -1,0 +1,397 @@
+{
+  "instance" : {
+    "id" : "B737NG600-10",
+    "name" : "B737NG600-10",
+    "version" : "1.1",
+    "maxTime" : 4220,
+    "balanceAF" : 300,
+    "balanceLR" : 500,
+    "resources" : [ {
+      "id" : 0,
+      "name" : "Technician 1",
+      "categories" : [ ],
+      "unavailable" : [ {
+        "start" : 0,
+        "end" : 64
+      }, {
+        "start" : 160,
+        "end" : 224
+      } ],
+      "cost" : 750
+    }, {
+      "id" : 1,
+      "name" : "Technician 2",
+      "categories" : [ ],
+      "unavailable" : [ ],
+      "cost" : 750
+    }, {
+      "id" : 2,
+      "name" : "Technician 3",
+      "categories" : [ ],
+      "unavailable" : [ {
+        "start" : 32,
+        "end" : 128
+      } ],
+      "cost" : 750
+    }, {
+      "id" : 3,
+      "name" : "Technician 4",
+      "categories" : [ ],
+      "unavailable" : [ {
+        "start" : 320,
+        "end" : 384
+      } ],
+      "cost" : 750
+    }, {
+      "id" : 4,
+      "name" : "Technician 5",
+      "categories" : [ "B1" ],
+      "unavailable" : [ ],
+      "cost" : 1000
+    }, {
+      "id" : 5,
+      "name" : "Technician 6",
+      "categories" : [ "B2" ],
+      "unavailable" : [ {
+        "start" : 64,
+        "end" : 96
+      } ],
+      "cost" : 1250
+    }, {
+      "id" : 6,
+      "name" : "Technician 7",
+      "categories" : [ "B1", "B2" ],
+      "unavailable" : [ {
+        "start" : 32,
+        "end" : 64
+      }, {
+        "start" : 534,
+        "end" : 640
+      } ],
+      "cost" : 1500
+    } ],
+    "locations" : [ {
+      "id" : 0,
+      "name" : "FWD Cargo",
+      "zone" : "FWD",
+      "capacity" : 3
+    }, {
+      "id" : 1,
+      "name" : "Cockpit",
+      "zone" : "FWD",
+      "capacity" : 2
+    }, {
+      "id" : 2,
+      "name" : "Nose Section",
+      "zone" : "FWD",
+      "capacity" : 2
+    }, {
+      "id" : 3,
+      "name" : "Cabin",
+      "zone" : "CENTER",
+      "capacity" : 6
+    }, {
+      "id" : 4,
+      "name" : "E&E",
+      "zone" : "FWD",
+      "capacity" : 2
+    }, {
+      "id" : 5,
+      "name" : "AFT Cargo",
+      "zone" : "AFT",
+      "capacity" : 3
+    }, {
+      "id" : 6,
+      "name" : "Nose Wheel Well",
+      "zone" : "FWD",
+      "capacity" : 2
+    }, {
+      "id" : 7,
+      "name" : "Center Lower Fuselage",
+      "zone" : "CENTER",
+      "capacity" : 4
+    }, {
+      "id" : 8,
+      "name" : "Tail Section",
+      "zone" : "AFT",
+      "capacity" : 3
+    }, {
+      "id" : 9,
+      "name" : "Main Wheel Well",
+      "zone" : "CENTER",
+      "capacity" : 2
+    }, {
+      "id" : 10,
+      "name" : "LH Wing ",
+      "zone" : "LH",
+      "capacity" : 5
+    }, {
+      "id" : 11,
+      "name" : "RH Wing ",
+      "zone" : "RH",
+      "capacity" : 5
+    }, {
+      "id" : 12,
+      "name" : "Fuselage",
+      "zone" : "CENTER",
+      "capacity" : 10
+    }, {
+      "id" : 13,
+      "name" : "",
+      "zone" : "",
+      "capacity" : 2147483647
+    } ],
+    "operations" : [ {
+      "id" : 0,
+      "name" : "Purging and Fuel Tank Entry",
+      "card" : "28-003",
+      "duration" : 16,
+      "location" : 13,
+      "occupancy" : 2,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 1,
+      "name" : "Open the LH and RH  Thrust Reverser (Hand Pump Procedure) Eng 2",
+      "card" : "78-006",
+      "duration" : 2,
+      "location" : 13,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 2,
+      "name" : "AFT Attendants� Seat Removal",
+      "card" : "25-039",
+      "duration" : 2,
+      "location" : 3,
+      "occupancy" : 2,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ 1 ]
+    }, {
+      "id" : 3,
+      "name" : "AFT Lavatory Service Unit Removal",
+      "card" : "25-029",
+      "duration" : 2,
+      "location" : 3,
+      "occupancy" : 1,
+      "mass" : 1,
+      "requirements" : [ ],
+      "precedences" : [ 1 ]
+    }, {
+      "id" : 4,
+      "name" : "Entertainment Switch Module Removal",
+      "card" : "23-043",
+      "duration" : 1,
+      "location" : 3,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ 2, 1 ]
+    }, {
+      "id" : 5,
+      "name" : "LH Inboard Aft Flap Actuating Mechanism Removal",
+      "card" : "27-096",
+      "duration" : 3,
+      "location" : 13,
+      "occupancy" : 2,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 6,
+      "name" : "Remove the Fueling Shutoff Valves",
+      "card" : "28-025",
+      "duration" : 4,
+      "location" : 13,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ {
+        "item" : "B1",
+        "quantity" : 1
+      } ],
+      "precedences" : [ ]
+    }, {
+      "id" : 7,
+      "name" : "Remove all remaining hardware from the Cabin compartment",
+      "card" : "53-018",
+      "duration" : 4,
+      "location" : 3,
+      "occupancy" : 2,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 8,
+      "name" : "LH FMCS CDU Keyboard Removal",
+      "card" : "34-067",
+      "duration" : 1,
+      "location" : 1,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ {
+        "item" : "B2",
+        "quantity" : 1
+      } ],
+      "precedences" : [ ]
+    }, {
+      "id" : 9,
+      "name" : "Aircraft Sectional Cutting ",
+      "card" : "00-004",
+      "duration" : 64,
+      "location" : 13,
+      "occupancy" : 4,
+      "mass" : 1,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    } ]
+  },
+  "activities" : [ {
+    "operation" : 0,
+    "start" : 11,
+    "end" : 27
+  }, {
+    "operation" : 1,
+    "start" : 4,
+    "end" : 6
+  }, {
+    "operation" : 2,
+    "start" : 8,
+    "end" : 10
+  }, {
+    "operation" : 3,
+    "start" : 6,
+    "end" : 8
+  }, {
+    "operation" : 4,
+    "start" : 10,
+    "end" : 11
+  }, {
+    "operation" : 5,
+    "start" : 27,
+    "end" : 30
+  }, {
+    "operation" : 6,
+    "start" : 4,
+    "end" : 8
+  }, {
+    "operation" : 7,
+    "start" : 0,
+    "end" : 4
+  }, {
+    "operation" : 8,
+    "start" : 10,
+    "end" : 11
+  }, {
+    "operation" : 9,
+    "start" : 0,
+    "end" : 64
+  } ],
+  "assignments" : [ {
+    "resource" : 1,
+    "operation" : 9,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 64
+  }, {
+    "resource" : 2,
+    "operation" : 0,
+    "requirement" : 0,
+    "start" : 11,
+    "end" : 27
+  }, {
+    "resource" : 2,
+    "operation" : 1,
+    "requirement" : 0,
+    "start" : 4,
+    "end" : 6
+  }, {
+    "resource" : 2,
+    "operation" : 2,
+    "requirement" : 0,
+    "start" : 8,
+    "end" : 10
+  }, {
+    "resource" : 2,
+    "operation" : 3,
+    "requirement" : 0,
+    "start" : 6,
+    "end" : 8
+  }, {
+    "resource" : 2,
+    "operation" : 4,
+    "requirement" : 0,
+    "start" : 10,
+    "end" : 11
+  }, {
+    "resource" : 2,
+    "operation" : 5,
+    "requirement" : 0,
+    "start" : 27,
+    "end" : 30
+  }, {
+    "resource" : 2,
+    "operation" : 7,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 4
+  }, {
+    "resource" : 3,
+    "operation" : 9,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 64
+  }, {
+    "resource" : 4,
+    "operation" : 9,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 64
+  }, {
+    "resource" : 5,
+    "operation" : 9,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 64
+  }, {
+    "resource" : 6,
+    "operation" : 0,
+    "requirement" : 0,
+    "start" : 11,
+    "end" : 27
+  }, {
+    "resource" : 6,
+    "operation" : 2,
+    "requirement" : 0,
+    "start" : 8,
+    "end" : 10
+  }, {
+    "resource" : 6,
+    "operation" : 5,
+    "requirement" : 0,
+    "start" : 27,
+    "end" : 30
+  }, {
+    "resource" : 6,
+    "operation" : 6,
+    "requirement" : 0,
+    "start" : 4,
+    "end" : 8
+  }, {
+    "resource" : 6,
+    "operation" : 7,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 4
+  }, {
+    "resource" : 6,
+    "operation" : 8,
+    "requirement" : 0,
+    "start" : 10,
+    "end" : 11
+  } ],
+  "objective" : [ 64, 307500 ]
+}

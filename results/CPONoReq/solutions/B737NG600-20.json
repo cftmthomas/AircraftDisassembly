@@ -1,0 +1,615 @@
+{
+  "instance" : {
+    "id" : "B737NG600-20",
+    "name" : "B737NG600-20",
+    "version" : "1.1",
+    "maxTime" : 4220,
+    "balanceAF" : 300,
+    "balanceLR" : 500,
+    "resources" : [ {
+      "id" : 0,
+      "name" : "Technician 1",
+      "categories" : [ ],
+      "unavailable" : [ {
+        "start" : 0,
+        "end" : 64
+      }, {
+        "start" : 160,
+        "end" : 224
+      } ],
+      "cost" : 750
+    }, {
+      "id" : 1,
+      "name" : "Technician 2",
+      "categories" : [ ],
+      "unavailable" : [ ],
+      "cost" : 750
+    }, {
+      "id" : 2,
+      "name" : "Technician 3",
+      "categories" : [ ],
+      "unavailable" : [ {
+        "start" : 32,
+        "end" : 128
+      } ],
+      "cost" : 750
+    }, {
+      "id" : 3,
+      "name" : "Technician 4",
+      "categories" : [ ],
+      "unavailable" : [ {
+        "start" : 320,
+        "end" : 384
+      } ],
+      "cost" : 750
+    }, {
+      "id" : 4,
+      "name" : "Technician 5",
+      "categories" : [ "B1" ],
+      "unavailable" : [ ],
+      "cost" : 1000
+    }, {
+      "id" : 5,
+      "name" : "Technician 6",
+      "categories" : [ "B2" ],
+      "unavailable" : [ {
+        "start" : 64,
+        "end" : 96
+      } ],
+      "cost" : 1250
+    }, {
+      "id" : 6,
+      "name" : "Technician 7",
+      "categories" : [ "B1", "B2" ],
+      "unavailable" : [ {
+        "start" : 32,
+        "end" : 64
+      }, {
+        "start" : 534,
+        "end" : 640
+      } ],
+      "cost" : 1500
+    } ],
+    "locations" : [ {
+      "id" : 0,
+      "name" : "FWD Cargo",
+      "zone" : "FWD",
+      "capacity" : 3
+    }, {
+      "id" : 1,
+      "name" : "Cockpit",
+      "zone" : "FWD",
+      "capacity" : 2
+    }, {
+      "id" : 2,
+      "name" : "Nose Section",
+      "zone" : "FWD",
+      "capacity" : 2
+    }, {
+      "id" : 3,
+      "name" : "Cabin",
+      "zone" : "CENTER",
+      "capacity" : 6
+    }, {
+      "id" : 4,
+      "name" : "E&E",
+      "zone" : "FWD",
+      "capacity" : 2
+    }, {
+      "id" : 5,
+      "name" : "AFT Cargo",
+      "zone" : "AFT",
+      "capacity" : 3
+    }, {
+      "id" : 6,
+      "name" : "Nose Wheel Well",
+      "zone" : "FWD",
+      "capacity" : 2
+    }, {
+      "id" : 7,
+      "name" : "Center Lower Fuselage",
+      "zone" : "CENTER",
+      "capacity" : 4
+    }, {
+      "id" : 8,
+      "name" : "Tail Section",
+      "zone" : "AFT",
+      "capacity" : 3
+    }, {
+      "id" : 9,
+      "name" : "Main Wheel Well",
+      "zone" : "CENTER",
+      "capacity" : 2
+    }, {
+      "id" : 10,
+      "name" : "LH Wing ",
+      "zone" : "LH",
+      "capacity" : 5
+    }, {
+      "id" : 11,
+      "name" : "RH Wing ",
+      "zone" : "RH",
+      "capacity" : 5
+    }, {
+      "id" : 12,
+      "name" : "Fuselage",
+      "zone" : "CENTER",
+      "capacity" : 10
+    }, {
+      "id" : 13,
+      "name" : "",
+      "zone" : "",
+      "capacity" : 2147483647
+    } ],
+    "operations" : [ {
+      "id" : 0,
+      "name" : "Detection Test for Microbial Growth",
+      "card" : "28-004",
+      "duration" : 4,
+      "location" : 13,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 1,
+      "name" : "Deactivation of heating systems. (ATA 30 - 34 -38)",
+      "card" : "30-001",
+      "duration" : 1,
+      "location" : 1,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 2,
+      "name" : "Portable Halon Fire Extinguishers Removal",
+      "card" : "26-028",
+      "duration" : 1,
+      "location" : 13,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ {
+        "item" : "B1",
+        "quantity" : 1
+      } ],
+      "precedences" : [ 0 ]
+    }, {
+      "id" : 3,
+      "name" : "Main Landing Gear Wheel and Tire Assembly 1 Removal",
+      "card" : "32-092",
+      "duration" : 1,
+      "location" : 9,
+      "occupancy" : 2,
+      "mass" : 0,
+      "requirements" : [ {
+        "item" : "B1",
+        "quantity" : 1
+      } ],
+      "precedences" : [ 0, 4 ]
+    }, {
+      "id" : 4,
+      "name" : "Remove the Inlet Cowl Eng 2",
+      "card" : "71-006",
+      "duration" : 4,
+      "location" : 13,
+      "occupancy" : 2,
+      "mass" : 50,
+      "requirements" : [ {
+        "item" : "B1",
+        "quantity" : 1
+      } ],
+      "precedences" : [ 0 ]
+    }, {
+      "id" : 5,
+      "name" : "Lowered Ceiling Removal",
+      "card" : "25-024",
+      "duration" : 8,
+      "location" : 3,
+      "occupancy" : 2,
+      "mass" : 1,
+      "requirements" : [ ],
+      "precedences" : [ 0 ]
+    }, {
+      "id" : 6,
+      "name" : "Emergency Exit Door Snubbers Removal",
+      "card" : "52-016",
+      "duration" : 8,
+      "location" : 3,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 7,
+      "name" : "Water Filter Assembly  Removal",
+      "card" : "38-004",
+      "duration" : 2,
+      "location" : 3,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 8,
+      "name" : "Attendant�s Panel Water Quantity Indicator Removal",
+      "card" : "38-012",
+      "duration" : 2,
+      "location" : 3,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ {
+        "item" : "B1",
+        "quantity" : 1
+      } ],
+      "precedences" : [ 0 ]
+    }, {
+      "id" : 9,
+      "name" : "RH Fuel Vent Float Valve Removal",
+      "card" : "28-016",
+      "duration" : 2,
+      "location" : 13,
+      "occupancy" : 2,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ 10 ]
+    }, {
+      "id" : 10,
+      "name" : "Bussing Plug Removal tank N� 2",
+      "card" : "28-076",
+      "duration" : 4,
+      "location" : 13,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ {
+        "item" : "B1",
+        "quantity" : 1
+      } ],
+      "precedences" : [ ]
+    }, {
+      "id" : 11,
+      "name" : "Insulation Panels Removal",
+      "card" : "49-009",
+      "duration" : 4,
+      "location" : 8,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ 0 ]
+    }, {
+      "id" : 12,
+      "name" : "Stabilizer Takeoff Warning Switches Removal",
+      "card" : "31-021",
+      "duration" : 1,
+      "location" : 8,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 13,
+      "name" : "LH Angle of Attack Sensor Removal",
+      "card" : "34-014",
+      "duration" : 2,
+      "location" : 12,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ {
+        "item" : "B2",
+        "quantity" : 1
+      } ],
+      "precedences" : [ ]
+    }, {
+      "id" : 14,
+      "name" : "Pressure Limit Switch Removal",
+      "card" : "38-044",
+      "duration" : 1,
+      "location" : 5,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 15,
+      "name" : "Audio Entertainment Player Removal",
+      "card" : "23-039",
+      "duration" : 1,
+      "location" : 4,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 16,
+      "name" : "RH Control Column Shaker Removal",
+      "card" : "27-068",
+      "duration" : 2,
+      "location" : 1,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ {
+        "item" : "B2",
+        "quantity" : 1
+      } ],
+      "precedences" : [ ]
+    }, {
+      "id" : 17,
+      "name" : "Speed Brake Lever Removal",
+      "card" : "27-201",
+      "duration" : 2,
+      "location" : 1,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    }, {
+      "id" : 18,
+      "name" : "CTR UPR Display Unit Removal",
+      "card" : "31-024",
+      "duration" : 1,
+      "location" : 1,
+      "occupancy" : 1,
+      "mass" : 0,
+      "requirements" : [ {
+        "item" : "B2",
+        "quantity" : 1
+      } ],
+      "precedences" : [ ]
+    }, {
+      "id" : 19,
+      "name" : "Aircraft Sectional Cutting ",
+      "card" : "00-004",
+      "duration" : 64,
+      "location" : 13,
+      "occupancy" : 4,
+      "mass" : 1,
+      "requirements" : [ ],
+      "precedences" : [ ]
+    } ]
+  },
+  "activities" : [ {
+    "operation" : 0,
+    "start" : 4,
+    "end" : 8
+  }, {
+    "operation" : 1,
+    "start" : 64,
+    "end" : 65
+  }, {
+    "operation" : 2,
+    "start" : 64,
+    "end" : 65
+  }, {
+    "operation" : 3,
+    "start" : 31,
+    "end" : 32
+  }, {
+    "operation" : 4,
+    "start" : 10,
+    "end" : 14
+  }, {
+    "operation" : 5,
+    "start" : 14,
+    "end" : 22
+  }, {
+    "operation" : 6,
+    "start" : 23,
+    "end" : 31
+  }, {
+    "operation" : 7,
+    "start" : 2,
+    "end" : 4
+  }, {
+    "operation" : 8,
+    "start" : 22,
+    "end" : 24
+  }, {
+    "operation" : 9,
+    "start" : 8,
+    "end" : 10
+  }, {
+    "operation" : 10,
+    "start" : 0,
+    "end" : 4
+  }, {
+    "operation" : 11,
+    "start" : 24,
+    "end" : 28
+  }, {
+    "operation" : 12,
+    "start" : 64,
+    "end" : 65
+  }, {
+    "operation" : 13,
+    "start" : 0,
+    "end" : 2
+  }, {
+    "operation" : 14,
+    "start" : 22,
+    "end" : 23
+  }, {
+    "operation" : 15,
+    "start" : 64,
+    "end" : 65
+  }, {
+    "operation" : 16,
+    "start" : 4,
+    "end" : 6
+  }, {
+    "operation" : 17,
+    "start" : 6,
+    "end" : 8
+  }, {
+    "operation" : 18,
+    "start" : 64,
+    "end" : 65
+  }, {
+    "operation" : 19,
+    "start" : 0,
+    "end" : 64
+  } ],
+  "assignments" : [ {
+    "resource" : 0,
+    "operation" : 2,
+    "requirement" : 0,
+    "start" : 64,
+    "end" : 65
+  }, {
+    "resource" : 1,
+    "operation" : 12,
+    "requirement" : 0,
+    "start" : 64,
+    "end" : 65
+  }, {
+    "resource" : 1,
+    "operation" : 19,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 64
+  }, {
+    "resource" : 2,
+    "operation" : 3,
+    "requirement" : 0,
+    "start" : 31,
+    "end" : 32
+  }, {
+    "resource" : 2,
+    "operation" : 4,
+    "requirement" : 0,
+    "start" : 10,
+    "end" : 14
+  }, {
+    "resource" : 2,
+    "operation" : 5,
+    "requirement" : 0,
+    "start" : 14,
+    "end" : 22
+  }, {
+    "resource" : 2,
+    "operation" : 7,
+    "requirement" : 0,
+    "start" : 2,
+    "end" : 4
+  }, {
+    "resource" : 2,
+    "operation" : 8,
+    "requirement" : 0,
+    "start" : 22,
+    "end" : 24
+  }, {
+    "resource" : 2,
+    "operation" : 9,
+    "requirement" : 0,
+    "start" : 8,
+    "end" : 10
+  }, {
+    "resource" : 2,
+    "operation" : 11,
+    "requirement" : 0,
+    "start" : 24,
+    "end" : 28
+  }, {
+    "resource" : 2,
+    "operation" : 13,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 2
+  }, {
+    "resource" : 2,
+    "operation" : 16,
+    "requirement" : 0,
+    "start" : 4,
+    "end" : 6
+  }, {
+    "resource" : 2,
+    "operation" : 17,
+    "requirement" : 0,
+    "start" : 6,
+    "end" : 8
+  }, {
+    "resource" : 3,
+    "operation" : 15,
+    "requirement" : 0,
+    "start" : 64,
+    "end" : 65
+  }, {
+    "resource" : 3,
+    "operation" : 19,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 64
+  }, {
+    "resource" : 4,
+    "operation" : 1,
+    "requirement" : 0,
+    "start" : 64,
+    "end" : 65
+  }, {
+    "resource" : 4,
+    "operation" : 19,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 64
+  }, {
+    "resource" : 5,
+    "operation" : 19,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 64
+  }, {
+    "resource" : 6,
+    "operation" : 0,
+    "requirement" : 0,
+    "start" : 4,
+    "end" : 8
+  }, {
+    "resource" : 6,
+    "operation" : 3,
+    "requirement" : 0,
+    "start" : 31,
+    "end" : 32
+  }, {
+    "resource" : 6,
+    "operation" : 4,
+    "requirement" : 0,
+    "start" : 10,
+    "end" : 14
+  }, {
+    "resource" : 6,
+    "operation" : 5,
+    "requirement" : 0,
+    "start" : 14,
+    "end" : 22
+  }, {
+    "resource" : 6,
+    "operation" : 6,
+    "requirement" : 0,
+    "start" : 23,
+    "end" : 31
+  }, {
+    "resource" : 6,
+    "operation" : 9,
+    "requirement" : 0,
+    "start" : 8,
+    "end" : 10
+  }, {
+    "resource" : 6,
+    "operation" : 10,
+    "requirement" : 0,
+    "start" : 0,
+    "end" : 4
+  }, {
+    "resource" : 6,
+    "operation" : 14,
+    "requirement" : 0,
+    "start" : 22,
+    "end" : 23
+  }, {
+    "resource" : 6,
+    "operation" : 18,
+    "requirement" : 0,
+    "start" : 64,
+    "end" : 65
+  } ],
+  "objective" : [ 65, 314500 ]
+}

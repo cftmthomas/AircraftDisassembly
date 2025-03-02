@@ -1,0 +1,53 @@
+{
+  "instance" : "B737NG600-100",
+  "objectiveBound" : [ 76, 0 ],
+  "log" : [ {
+    "time" : 0.025211477,
+    "objective" : [ 172, 598250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.045503743,
+    "objective" : [ 167, 576250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.05593533,
+    "objective" : [ 153, 589250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.066992955,
+    "objective" : [ 149, 594750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.077107883,
+    "objective" : [ 148, 577000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.087256325,
+    "objective" : [ 146, 579500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.09717981,
+    "objective" : [ 145, 597000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.106995698,
+    "objective" : [ 144, 574000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.117708365,
+    "objective" : [ 143, 558500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.130459509,
+    "objective" : [ 123, 588000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.142023295,
+    "objective" : [ 117, 585750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 3600.012603869,
+    "objective" : [ 117, 585750 ],
+    "optimal" : [ false ]
+  } ]
+}

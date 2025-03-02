@@ -1,0 +1,85 @@
+{
+  "instance" : "B737NG600-300",
+  "objectiveBound" : [ 128, 0 ],
+  "log" : [ {
+    "time" : 0.122296049,
+    "objective" : [ 803, 1411750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.259627543,
+    "objective" : [ 403, 1510250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.305872868,
+    "objective" : [ 399, 1499000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.421426233,
+    "objective" : [ 383, 1548250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.522154941,
+    "objective" : [ 360, 1496750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.577329829,
+    "objective" : [ 350, 1471000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.683065922,
+    "objective" : [ 320, 1419500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.968999569,
+    "objective" : [ 271, 1461250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 1.066219281,
+    "objective" : [ 270, 1458000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 1.139489448,
+    "objective" : [ 268, 1451750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 1.266465616,
+    "objective" : [ 267, 1455250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 1.92542104,
+    "objective" : [ 266, 1453750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 2.008276664,
+    "objective" : [ 264, 1447000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 2.061336972,
+    "objective" : [ 263, 1445500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 2.389192106,
+    "objective" : [ 258, 1441250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 2.556039872,
+    "objective" : [ 254, 1436250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 33.883668187,
+    "objective" : [ 253, 1434000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 35.158232193,
+    "objective" : [ 251, 1431750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 180.316673134,
+    "objective" : [ 250, 1431500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 3600.160554672,
+    "objective" : [ 250, 1431500 ],
+    "optimal" : [ false ]
+  } ]
+}

@@ -1,0 +1,25 @@
+{
+  "instance" : "B737NG600-10",
+  "objectiveBound" : [ 64, 0 ],
+  "log" : [ {
+    "time" : 0.006716402,
+    "objective" : [ 99, 293750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.016755686,
+    "objective" : [ 98, 292750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.025031119,
+    "objective" : [ 66, 303750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.026612847,
+    "objective" : [ 64, 308250 ],
+    "optimal" : [ true ]
+  }, {
+    "time" : 0.027424613,
+    "objective" : [ 64, 308250 ],
+    "optimal" : [ true ]
+  } ]
+}

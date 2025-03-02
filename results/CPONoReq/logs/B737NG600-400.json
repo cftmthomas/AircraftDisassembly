@@ -1,0 +1,21 @@
+{
+  "instance" : "B737NG600-400",
+  "objectiveBound" : [ 170, 0 ],
+  "log" : [ {
+    "time" : 0.163662553,
+    "objective" : [ 491, 1654250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.344110572,
+    "objective" : [ 326, 1679250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.978174545,
+    "objective" : [ 287, 1677000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 3600.023425373,
+    "objective" : [ 287, 1677000 ],
+    "optimal" : [ false ]
+  } ]
+}

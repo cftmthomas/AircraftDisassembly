@@ -1,0 +1,77 @@
+{
+  "instance" : "B737NG600-300",
+  "objectiveBound" : [ 128, 0 ],
+  "log" : [ {
+    "time" : 0.119846537,
+    "objective" : [ 791, 1411250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.265087971,
+    "objective" : [ 409, 1512500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.311099287,
+    "objective" : [ 404, 1494250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.431493414,
+    "objective" : [ 387, 1507500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.493624831,
+    "objective" : [ 386, 1525250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.654358937,
+    "objective" : [ 381, 1487750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.724197892,
+    "objective" : [ 320, 1430250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.880569406,
+    "objective" : [ 268, 1424750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 1.11092281,
+    "objective" : [ 260, 1445500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 2.517008685,
+    "objective" : [ 259, 1445000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 2.560528885,
+    "objective" : [ 256, 1435250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 33.662924172,
+    "objective" : [ 255, 1439000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 34.036442599,
+    "objective" : [ 254, 1435250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 34.191082058,
+    "objective" : [ 253, 1435500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 36.741507681,
+    "objective" : [ 252, 1430750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 36.912266353,
+    "objective" : [ 251, 1430000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 70.197689353,
+    "objective" : [ 250, 1431500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 3600.278789398,
+    "objective" : [ 250, 1431500 ],
+    "optimal" : [ false ]
+  } ]
+}

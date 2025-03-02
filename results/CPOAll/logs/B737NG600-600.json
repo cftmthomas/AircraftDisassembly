@@ -1,0 +1,97 @@
+{
+  "instance" : "B737NG600-600",
+  "objectiveBound" : [ 254, 0 ],
+  "log" : [ {
+    "time" : 0.326710403,
+    "objective" : [ 1386, 2463250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 0.70126401,
+    "objective" : [ 710, 2644750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 1.410103733,
+    "objective" : [ 709, 2725000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 2.695595622,
+    "objective" : [ 708, 2724000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 3.205370456,
+    "objective" : [ 707, 2680500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 3.564432613,
+    "objective" : [ 447, 2564500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 8.576517173,
+    "objective" : [ 446, 2565750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 11.316735959,
+    "objective" : [ 445, 2558250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 18.219381828,
+    "objective" : [ 444, 2562250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 19.529853889,
+    "objective" : [ 443, 2558250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 21.90159279,
+    "objective" : [ 439, 2552750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 23.096853093,
+    "objective" : [ 435, 2542750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 25.197211845,
+    "objective" : [ 434, 2541750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 29.419296418,
+    "objective" : [ 432, 2541250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 30.038032223,
+    "objective" : [ 431, 2533000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 38.356884869,
+    "objective" : [ 429, 2542500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 47.873338761,
+    "objective" : [ 428, 2537500 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 51.668253224,
+    "objective" : [ 427, 2540750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 60.961934156,
+    "objective" : [ 426, 2537250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 99.970758928,
+    "objective" : [ 422, 2531750 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 168.146347859,
+    "objective" : [ 421, 2530000 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 1429.876648861,
+    "objective" : [ 420, 2530250 ],
+    "optimal" : [ false ]
+  }, {
+    "time" : 3600.216059939,
+    "objective" : [ 420, 2530250 ],
+    "optimal" : [ false ]
+  } ]
+}
