@@ -1,0 +1,4687 @@
+{
+  "id" : "B737NG600-400",
+  "name" : "B737NG600-400",
+  "version" : "1.1",
+  "maxTime" : 4220,
+  "balanceAF" : 300,
+  "balanceLR" : 500,
+  "resources" : [ {
+    "id" : 0,
+    "name" : "Technician 1",
+    "categories" : [ ],
+    "unavailable" : [ {
+      "start" : 0,
+      "end" : 64
+    }, {
+      "start" : 160,
+      "end" : 224
+    } ],
+    "cost" : 750
+  }, {
+    "id" : 1,
+    "name" : "Technician 2",
+    "categories" : [ ],
+    "unavailable" : [ ],
+    "cost" : 750
+  }, {
+    "id" : 2,
+    "name" : "Technician 3",
+    "categories" : [ ],
+    "unavailable" : [ {
+      "start" : 32,
+      "end" : 128
+    } ],
+    "cost" : 750
+  }, {
+    "id" : 3,
+    "name" : "Technician 4",
+    "categories" : [ ],
+    "unavailable" : [ {
+      "start" : 320,
+      "end" : 384
+    } ],
+    "cost" : 750
+  }, {
+    "id" : 4,
+    "name" : "Technician 5",
+    "categories" : [ "B1" ],
+    "unavailable" : [ ],
+    "cost" : 1000
+  }, {
+    "id" : 5,
+    "name" : "Technician 6",
+    "categories" : [ "B2" ],
+    "unavailable" : [ {
+      "start" : 64,
+      "end" : 96
+    } ],
+    "cost" : 1250
+  }, {
+    "id" : 6,
+    "name" : "Technician 7",
+    "categories" : [ "B1", "B2" ],
+    "unavailable" : [ {
+      "start" : 32,
+      "end" : 64
+    }, {
+      "start" : 534,
+      "end" : 640
+    } ],
+    "cost" : 1500
+  } ],
+  "locations" : [ {
+    "id" : 0,
+    "name" : "Location 0",
+    "zone" : "FWD",
+    "capacity" : 3
+  }, {
+    "id" : 1,
+    "name" : "Location 1",
+    "zone" : "FWD",
+    "capacity" : 2
+  }, {
+    "id" : 2,
+    "name" : "Location 2",
+    "zone" : "FWD",
+    "capacity" : 2
+  }, {
+    "id" : 3,
+    "name" : "Location 3",
+    "zone" : "CENTER",
+    "capacity" : 6
+  }, {
+    "id" : 4,
+    "name" : "Location 4",
+    "zone" : "FWD",
+    "capacity" : 2
+  }, {
+    "id" : 5,
+    "name" : "Location 5",
+    "zone" : "AFT",
+    "capacity" : 3
+  }, {
+    "id" : 6,
+    "name" : "Location 6",
+    "zone" : "FWD",
+    "capacity" : 2
+  }, {
+    "id" : 7,
+    "name" : "Location 7",
+    "zone" : "CENTER",
+    "capacity" : 4
+  }, {
+    "id" : 8,
+    "name" : "Location 8",
+    "zone" : "AFT",
+    "capacity" : 3
+  }, {
+    "id" : 9,
+    "name" : "Location 9",
+    "zone" : "CENTER",
+    "capacity" : 2
+  }, {
+    "id" : 10,
+    "name" : "Location 10",
+    "zone" : "LH",
+    "capacity" : 5
+  }, {
+    "id" : 11,
+    "name" : "Location 11",
+    "zone" : "RH",
+    "capacity" : 5
+  }, {
+    "id" : 12,
+    "name" : "Location 12",
+    "zone" : "CENTER",
+    "capacity" : 10
+  }, {
+    "id" : 13,
+    "name" : "Location 13",
+    "zone" : "",
+    "capacity" : 2147483647
+  } ],
+  "operations" : [ {
+    "id" : 0,
+    "name" : "Operation 0",
+    "card" : "Card 0",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 1,
+    "name" : "Operation 1",
+    "card" : "Card 1",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 0 ]
+  }, {
+    "id" : 2,
+    "name" : "Operation 2",
+    "card" : "Card 2",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 0 ]
+  }, {
+    "id" : 3,
+    "name" : "Operation 3",
+    "card" : "Card 3",
+    "duration" : 2,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 0 ]
+  }, {
+    "id" : 4,
+    "name" : "Operation 4",
+    "card" : "Card 4",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 0 ]
+  }, {
+    "id" : 5,
+    "name" : "Operation 5",
+    "card" : "Card 5",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 6,
+    "name" : "Operation 6",
+    "card" : "Card 6",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 7,
+    "name" : "Operation 7",
+    "card" : "Card 7",
+    "duration" : 4,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    }, {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 8,
+    "name" : "Operation 8",
+    "card" : "Card 8",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 7 ]
+  }, {
+    "id" : 9,
+    "name" : "Operation 9",
+    "card" : "Card 9",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 7 ]
+  }, {
+    "id" : 10,
+    "name" : "Operation 10",
+    "card" : "Card 10",
+    "duration" : 16,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 11,
+    "name" : "Operation 11",
+    "card" : "Card 11",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 12,
+    "name" : "Operation 12",
+    "card" : "Card 12",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 13,
+    "name" : "Operation 13",
+    "card" : "Card 13",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 14,
+    "name" : "Operation 14",
+    "card" : "Card 14",
+    "duration" : 12,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 23, 27 ]
+  }, {
+    "id" : 15,
+    "name" : "Operation 15",
+    "card" : "Card 15",
+    "duration" : 4,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 18 ]
+  }, {
+    "id" : 16,
+    "name" : "Operation 16",
+    "card" : "Card 16",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 14 ]
+  }, {
+    "id" : 17,
+    "name" : "Operation 17",
+    "card" : "Card 17",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 23, 27 ]
+  }, {
+    "id" : 18,
+    "name" : "Operation 18",
+    "card" : "Card 18",
+    "duration" : 1,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 53, 20, 52 ]
+  }, {
+    "id" : 19,
+    "name" : "Operation 19",
+    "card" : "Card 19",
+    "duration" : 2,
+    "location" : 6,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 20,
+    "name" : "Operation 20",
+    "card" : "Card 20",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 21,
+    "name" : "Operation 21",
+    "card" : "Card 21",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 22,
+    "name" : "Operation 22",
+    "card" : "Card 22",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 53, 20, 21, 23, 52 ]
+  }, {
+    "id" : 23,
+    "name" : "Operation 23",
+    "card" : "Card 23",
+    "duration" : 1,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 24,
+    "name" : "Operation 24",
+    "card" : "Card 24",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 18 ]
+  }, {
+    "id" : 25,
+    "name" : "Operation 25",
+    "card" : "Card 25",
+    "duration" : 6,
+    "location" : 6,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 26,
+    "name" : "Operation 26",
+    "card" : "Card 26",
+    "duration" : 6,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 10,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 18 ]
+  }, {
+    "id" : 27,
+    "name" : "Operation 27",
+    "card" : "Card 27",
+    "duration" : 3,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 21 ]
+  }, {
+    "id" : 28,
+    "name" : "Operation 28",
+    "card" : "Card 28",
+    "duration" : 2,
+    "location" : 6,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 29,
+    "name" : "Operation 29",
+    "card" : "Card 29",
+    "duration" : 8,
+    "location" : 12,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 30,
+    "name" : "Operation 30",
+    "card" : "Card 30",
+    "duration" : 8,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 31,
+    "name" : "Operation 31",
+    "card" : "Card 31",
+    "duration" : 8,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 32,
+    "name" : "Operation 32",
+    "card" : "Card 32",
+    "duration" : 4,
+    "location" : 7,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 67 ]
+  }, {
+    "id" : 33,
+    "name" : "Operation 33",
+    "card" : "Card 33",
+    "duration" : 4,
+    "location" : 2,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 47 ]
+  }, {
+    "id" : 34,
+    "name" : "Operation 34",
+    "card" : "Card 34",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 5,
+    "requirements" : [ ],
+    "precedences" : [ 30 ]
+  }, {
+    "id" : 35,
+    "name" : "Operation 35",
+    "card" : "Card 35",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 47 ]
+  }, {
+    "id" : 36,
+    "name" : "Operation 36",
+    "card" : "Card 36",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 47 ]
+  }, {
+    "id" : 37,
+    "name" : "Operation 37",
+    "card" : "Card 37",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 10,
+    "requirements" : [ ],
+    "precedences" : [ 30 ]
+  }, {
+    "id" : 38,
+    "name" : "Operation 38",
+    "card" : "Card 38",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 10,
+    "requirements" : [ ],
+    "precedences" : [ 31 ]
+  }, {
+    "id" : 39,
+    "name" : "Operation 39",
+    "card" : "Card 39",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 31 ]
+  }, {
+    "id" : 40,
+    "name" : "Operation 40",
+    "card" : "Card 40",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 41,
+    "name" : "Operation 41",
+    "card" : "Card 41",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 42,
+    "name" : "Operation 42",
+    "card" : "Card 42",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 30 ]
+  }, {
+    "id" : 43,
+    "name" : "Operation 43",
+    "card" : "Card 43",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 31 ]
+  }, {
+    "id" : 44,
+    "name" : "Operation 44",
+    "card" : "Card 44",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 31 ]
+  }, {
+    "id" : 45,
+    "name" : "Operation 45",
+    "card" : "Card 45",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 5,
+    "requirements" : [ ],
+    "precedences" : [ 30 ]
+  }, {
+    "id" : 46,
+    "name" : "Operation 46",
+    "card" : "Card 46",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 30,
+    "requirements" : [ ],
+    "precedences" : [ 31 ]
+  }, {
+    "id" : 47,
+    "name" : "Operation 47",
+    "card" : "Card 47",
+    "duration" : 2,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 55, 56 ]
+  }, {
+    "id" : 48,
+    "name" : "Operation 48",
+    "card" : "Card 48",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 100,
+    "requirements" : [ ],
+    "precedences" : [ 53 ]
+  }, {
+    "id" : 49,
+    "name" : "Operation 49",
+    "card" : "Card 49",
+    "duration" : 2,
+    "location" : 11,
+    "occupancy" : 2,
+    "mass" : 30,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 54 ]
+  }, {
+    "id" : 50,
+    "name" : "Operation 50",
+    "card" : "Card 50",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 52 ]
+  }, {
+    "id" : 51,
+    "name" : "Operation 51",
+    "card" : "Card 51",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 30,
+    "requirements" : [ ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 52,
+    "name" : "Operation 52",
+    "card" : "Card 52",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 53,
+    "name" : "Operation 53",
+    "card" : "Card 53",
+    "duration" : 3,
+    "location" : 11,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 49 ]
+  }, {
+    "id" : 54,
+    "name" : "Operation 54",
+    "card" : "Card 54",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 51 ]
+  }, {
+    "id" : 55,
+    "name" : "Operation 55",
+    "card" : "Card 55",
+    "duration" : 8,
+    "location" : 10,
+    "occupancy" : 2,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 1 ]
+  }, {
+    "id" : 56,
+    "name" : "Operation 56",
+    "card" : "Card 56",
+    "duration" : 8,
+    "location" : 11,
+    "occupancy" : 2,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 54 ]
+  }, {
+    "id" : 57,
+    "name" : "Operation 57",
+    "card" : "Card 57",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 58 ]
+  }, {
+    "id" : 58,
+    "name" : "Operation 58",
+    "card" : "Card 58",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 47 ]
+  }, {
+    "id" : 59,
+    "name" : "Operation 59",
+    "card" : "Card 59",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 47 ]
+  }, {
+    "id" : 60,
+    "name" : "Operation 60",
+    "card" : "Card 60",
+    "duration" : 32,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 61,
+    "name" : "Operation 61",
+    "card" : "Card 61",
+    "duration" : 8,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 63 ]
+  }, {
+    "id" : 62,
+    "name" : "Operation 62",
+    "card" : "Card 62",
+    "duration" : 8,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 68 ]
+  }, {
+    "id" : 63,
+    "name" : "Operation 63",
+    "card" : "Card 63",
+    "duration" : 6,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 64, 62 ]
+  }, {
+    "id" : 64,
+    "name" : "Operation 64",
+    "card" : "Card 64",
+    "duration" : 6,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 68 ]
+  }, {
+    "id" : 65,
+    "name" : "Operation 65",
+    "card" : "Card 65",
+    "duration" : 4,
+    "location" : 7,
+    "occupancy" : 3,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 47 ]
+  }, {
+    "id" : 66,
+    "name" : "Operation 66",
+    "card" : "Card 66",
+    "duration" : 5,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 32, 97, 98, 67 ]
+  }, {
+    "id" : 67,
+    "name" : "Operation 67",
+    "card" : "Card 67",
+    "duration" : 4,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 47 ]
+  }, {
+    "id" : 68,
+    "name" : "Operation 68",
+    "card" : "Card 68",
+    "duration" : 8,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 60 ]
+  }, {
+    "id" : 69,
+    "name" : "Operation 69",
+    "card" : "Card 69",
+    "duration" : 8,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 84 ]
+  }, {
+    "id" : 70,
+    "name" : "Operation 70",
+    "card" : "Card 70",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 83 ]
+  }, {
+    "id" : 71,
+    "name" : "Operation 71",
+    "card" : "Card 71",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 65 ]
+  }, {
+    "id" : 72,
+    "name" : "Operation 72",
+    "card" : "Card 72",
+    "duration" : 4,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 204 ]
+  }, {
+    "id" : 73,
+    "name" : "Operation 73",
+    "card" : "Card 73",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 93 ]
+  }, {
+    "id" : 74,
+    "name" : "Operation 74",
+    "card" : "Card 74",
+    "duration" : 4,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 65 ]
+  }, {
+    "id" : 75,
+    "name" : "Operation 75",
+    "card" : "Card 75",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 60 ]
+  }, {
+    "id" : 76,
+    "name" : "Operation 76",
+    "card" : "Card 76",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 84 ]
+  }, {
+    "id" : 77,
+    "name" : "Operation 77",
+    "card" : "Card 77",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 70, 80 ]
+  }, {
+    "id" : 78,
+    "name" : "Operation 78",
+    "card" : "Card 78",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 32, 97, 98, 67 ]
+  }, {
+    "id" : 79,
+    "name" : "Operation 79",
+    "card" : "Card 79",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 32, 97, 98, 67 ]
+  }, {
+    "id" : 80,
+    "name" : "Operation 80",
+    "card" : "Card 80",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 81,
+    "name" : "Operation 81",
+    "card" : "Card 81",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 80 ]
+  }, {
+    "id" : 82,
+    "name" : "Operation 82",
+    "card" : "Card 82",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 1,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 83,
+    "name" : "Operation 83",
+    "card" : "Card 83",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 84 ]
+  }, {
+    "id" : 84,
+    "name" : "Operation 84",
+    "card" : "Card 84",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 85,
+    "name" : "Operation 85",
+    "card" : "Card 85",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 95 ]
+  }, {
+    "id" : 86,
+    "name" : "Operation 86",
+    "card" : "Card 86",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 68 ]
+  }, {
+    "id" : 87,
+    "name" : "Operation 87",
+    "card" : "Card 87",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 60 ]
+  }, {
+    "id" : 88,
+    "name" : "Operation 88",
+    "card" : "Card 88",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 65, 71 ]
+  }, {
+    "id" : 89,
+    "name" : "Operation 89",
+    "card" : "Card 89",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 32, 67 ]
+  }, {
+    "id" : 90,
+    "name" : "Operation 90",
+    "card" : "Card 90",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 32, 97, 98, 67 ]
+  }, {
+    "id" : 91,
+    "name" : "Operation 91",
+    "card" : "Card 91",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 92 ]
+  }, {
+    "id" : 92,
+    "name" : "Operation 92",
+    "card" : "Card 92",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 74 ]
+  }, {
+    "id" : 93,
+    "name" : "Operation 93",
+    "card" : "Card 93",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 74 ]
+  }, {
+    "id" : 94,
+    "name" : "Operation 94",
+    "card" : "Card 94",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 61 ]
+  }, {
+    "id" : 95,
+    "name" : "Operation 95",
+    "card" : "Card 95",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 96,
+    "name" : "Operation 96",
+    "card" : "Card 96",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 97,
+    "name" : "Operation 97",
+    "card" : "Card 97",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 98,
+    "name" : "Operation 98",
+    "card" : "Card 98",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 99,
+    "name" : "Operation 99",
+    "card" : "Card 99",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 32, 97, 98, 67 ]
+  }, {
+    "id" : 100,
+    "name" : "Operation 100",
+    "card" : "Card 100",
+    "duration" : 1,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 32, 97, 98, 67 ]
+  }, {
+    "id" : 101,
+    "name" : "Operation 101",
+    "card" : "Card 101",
+    "duration" : 4,
+    "location" : 8,
+    "occupancy" : 2,
+    "mass" : 30,
+    "requirements" : [ ],
+    "precedences" : [ 63 ]
+  }, {
+    "id" : 102,
+    "name" : "Operation 102",
+    "card" : "Card 102",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 3,
+    "mass" : 20,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 106 ]
+  }, {
+    "id" : 103,
+    "name" : "Operation 103",
+    "card" : "Card 103",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 110, 102 ]
+  }, {
+    "id" : 104,
+    "name" : "Operation 104",
+    "card" : "Card 104",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 103 ]
+  }, {
+    "id" : 105,
+    "name" : "Operation 105",
+    "card" : "Card 105",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 63 ]
+  }, {
+    "id" : 106,
+    "name" : "Operation 106",
+    "card" : "Card 106",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 105 ]
+  }, {
+    "id" : 107,
+    "name" : "Operation 107",
+    "card" : "Card 107",
+    "duration" : 3,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 102, 63 ]
+  }, {
+    "id" : 108,
+    "name" : "Operation 108",
+    "card" : "Card 108",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 107 ]
+  }, {
+    "id" : 109,
+    "name" : "Operation 109",
+    "card" : "Card 109",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 108 ]
+  }, {
+    "id" : 110,
+    "name" : "Operation 110",
+    "card" : "Card 110",
+    "duration" : 16,
+    "location" : 8,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 101 ]
+  }, {
+    "id" : 111,
+    "name" : "Operation 111",
+    "card" : "Card 111",
+    "duration" : 8,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 30,
+    "requirements" : [ ],
+    "precedences" : [ 119 ]
+  }, {
+    "id" : 112,
+    "name" : "Operation 112",
+    "card" : "Card 112",
+    "duration" : 6,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 10,
+    "requirements" : [ ],
+    "precedences" : [ 151 ]
+  }, {
+    "id" : 113,
+    "name" : "Operation 113",
+    "card" : "Card 113",
+    "duration" : 6,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 10,
+    "requirements" : [ ],
+    "precedences" : [ 153 ]
+  }, {
+    "id" : 114,
+    "name" : "Operation 114",
+    "card" : "Card 114",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 123 ]
+  }, {
+    "id" : 115,
+    "name" : "Operation 115",
+    "card" : "Card 115",
+    "duration" : 2,
+    "location" : 10,
+    "occupancy" : 3,
+    "mass" : 20,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 128 ]
+  }, {
+    "id" : 116,
+    "name" : "Operation 116",
+    "card" : "Card 116",
+    "duration" : 2,
+    "location" : 11,
+    "occupancy" : 3,
+    "mass" : 20,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 150 ]
+  }, {
+    "id" : 117,
+    "name" : "Operation 117",
+    "card" : "Card 117",
+    "duration" : 3,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ 116 ]
+  }, {
+    "id" : 118,
+    "name" : "Operation 118",
+    "card" : "Card 118",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 111 ]
+  }, {
+    "id" : 119,
+    "name" : "Operation 119",
+    "card" : "Card 119",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 121 ]
+  }, {
+    "id" : 120,
+    "name" : "Operation 120",
+    "card" : "Card 120",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 122 ]
+  }, {
+    "id" : 121,
+    "name" : "Operation 121",
+    "card" : "Card 121",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 136 ]
+  }, {
+    "id" : 122,
+    "name" : "Operation 122",
+    "card" : "Card 122",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 124 ]
+  }, {
+    "id" : 123,
+    "name" : "Operation 123",
+    "card" : "Card 123",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 164 ]
+  }, {
+    "id" : 124,
+    "name" : "Operation 124",
+    "card" : "Card 124",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 117 ]
+  }, {
+    "id" : 125,
+    "name" : "Operation 125",
+    "card" : "Card 125",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 50,
+    "requirements" : [ ],
+    "precedences" : [ 167 ]
+  }, {
+    "id" : 126,
+    "name" : "Operation 126",
+    "card" : "Card 126",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 50,
+    "requirements" : [ ],
+    "precedences" : [ 127 ]
+  }, {
+    "id" : 127,
+    "name" : "Operation 127",
+    "card" : "Card 127",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 50,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 168 ]
+  }, {
+    "id" : 128,
+    "name" : "Operation 128",
+    "card" : "Card 128",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 149 ]
+  }, {
+    "id" : 129,
+    "name" : "Operation 129",
+    "card" : "Card 129",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 133 ]
+  }, {
+    "id" : 130,
+    "name" : "Operation 130",
+    "card" : "Card 130",
+    "duration" : 8,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 100,
+    "requirements" : [ ],
+    "precedences" : [ 181 ]
+  }, {
+    "id" : 131,
+    "name" : "Operation 131",
+    "card" : "Card 131",
+    "duration" : 8,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 100,
+    "requirements" : [ ],
+    "precedences" : [ 172 ]
+  }, {
+    "id" : 132,
+    "name" : "Operation 132",
+    "card" : "Card 132",
+    "duration" : 6,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 190 ]
+  }, {
+    "id" : 133,
+    "name" : "Operation 133",
+    "card" : "Card 133",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 120 ]
+  }, {
+    "id" : 134,
+    "name" : "Operation 134",
+    "card" : "Card 134",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 119 ]
+  }, {
+    "id" : 135,
+    "name" : "Operation 135",
+    "card" : "Card 135",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 124 ]
+  }, {
+    "id" : 136,
+    "name" : "Operation 136",
+    "card" : "Card 136",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 114 ]
+  }, {
+    "id" : 137,
+    "name" : "Operation 137",
+    "card" : "Card 137",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 163 ]
+  }, {
+    "id" : 138,
+    "name" : "Operation 138",
+    "card" : "Card 138",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 187 ]
+  }, {
+    "id" : 139,
+    "name" : "Operation 139",
+    "card" : "Card 139",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 173, 174 ]
+  }, {
+    "id" : 140,
+    "name" : "Operation 140",
+    "card" : "Card 140",
+    "duration" : 8,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 161 ]
+  }, {
+    "id" : 141,
+    "name" : "Operation 141",
+    "card" : "Card 141",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 134 ]
+  }, {
+    "id" : 142,
+    "name" : "Operation 142",
+    "card" : "Card 142",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 141 ]
+  }, {
+    "id" : 143,
+    "name" : "Operation 143",
+    "card" : "Card 143",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 141 ]
+  }, {
+    "id" : 144,
+    "name" : "Operation 144",
+    "card" : "Card 144",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 120 ]
+  }, {
+    "id" : 145,
+    "name" : "Operation 145",
+    "card" : "Card 145",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 136 ]
+  }, {
+    "id" : 146,
+    "name" : "Operation 146",
+    "card" : "Card 146",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 166 ]
+  }, {
+    "id" : 147,
+    "name" : "Operation 147",
+    "card" : "Card 147",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 125 ]
+  }, {
+    "id" : 148,
+    "name" : "Operation 148",
+    "card" : "Card 148",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 118 ]
+  }, {
+    "id" : 149,
+    "name" : "Operation 149",
+    "card" : "Card 149",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 185 ]
+  }, {
+    "id" : 150,
+    "name" : "Operation 150",
+    "card" : "Card 150",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 184 ]
+  }, {
+    "id" : 151,
+    "name" : "Operation 151",
+    "card" : "Card 151",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 103 ]
+  }, {
+    "id" : 152,
+    "name" : "Operation 152",
+    "card" : "Card 152",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 184 ]
+  }, {
+    "id" : 153,
+    "name" : "Operation 153",
+    "card" : "Card 153",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 152 ]
+  }, {
+    "id" : 154,
+    "name" : "Operation 154",
+    "card" : "Card 154",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 155 ]
+  }, {
+    "id" : 155,
+    "name" : "Operation 155",
+    "card" : "Card 155",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 169 ]
+  }, {
+    "id" : 156,
+    "name" : "Operation 156",
+    "card" : "Card 156",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 180 ]
+  }, {
+    "id" : 157,
+    "name" : "Operation 157",
+    "card" : "Card 157",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 170 ]
+  }, {
+    "id" : 158,
+    "name" : "Operation 158",
+    "card" : "Card 158",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 189 ]
+  }, {
+    "id" : 159,
+    "name" : "Operation 159",
+    "card" : "Card 159",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 132 ]
+  }, {
+    "id" : 160,
+    "name" : "Operation 160",
+    "card" : "Card 160",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 183 ]
+  }, {
+    "id" : 161,
+    "name" : "Operation 161",
+    "card" : "Card 161",
+    "duration" : 4,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 193 ]
+  }, {
+    "id" : 162,
+    "name" : "Operation 162",
+    "card" : "Card 162",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 177, 176 ]
+  }, {
+    "id" : 163,
+    "name" : "Operation 163",
+    "card" : "Card 163",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 186 ]
+  }, {
+    "id" : 164,
+    "name" : "Operation 164",
+    "card" : "Card 164",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 115 ]
+  }, {
+    "id" : 165,
+    "name" : "Operation 165",
+    "card" : "Card 165",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 146 ]
+  }, {
+    "id" : 166,
+    "name" : "Operation 166",
+    "card" : "Card 166",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 159 ]
+  }, {
+    "id" : 167,
+    "name" : "Operation 167",
+    "card" : "Card 167",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 148 ]
+  }, {
+    "id" : 168,
+    "name" : "Operation 168",
+    "card" : "Card 168",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 129 ]
+  }, {
+    "id" : 169,
+    "name" : "Operation 169",
+    "card" : "Card 169",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 138 ]
+  }, {
+    "id" : 170,
+    "name" : "Operation 170",
+    "card" : "Card 170",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 193 ]
+  }, {
+    "id" : 171,
+    "name" : "Operation 171",
+    "card" : "Card 171",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 162 ]
+  }, {
+    "id" : 172,
+    "name" : "Operation 172",
+    "card" : "Card 172",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 140 ]
+  }, {
+    "id" : 173,
+    "name" : "Operation 173",
+    "card" : "Card 173",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 191 ]
+  }, {
+    "id" : 174,
+    "name" : "Operation 174",
+    "card" : "Card 174",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 179 ]
+  }, {
+    "id" : 175,
+    "name" : "Operation 175",
+    "card" : "Card 175",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 182 ]
+  }, {
+    "id" : 176,
+    "name" : "Operation 176",
+    "card" : "Card 176",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 147 ]
+  }, {
+    "id" : 177,
+    "name" : "Operation 177",
+    "card" : "Card 177",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 175 ]
+  }, {
+    "id" : 178,
+    "name" : "Operation 178",
+    "card" : "Card 178",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 127 ]
+  }, {
+    "id" : 179,
+    "name" : "Operation 179",
+    "card" : "Card 179",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 178 ]
+  }, {
+    "id" : 180,
+    "name" : "Operation 180",
+    "card" : "Card 180",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 171 ]
+  }, {
+    "id" : 181,
+    "name" : "Operation 181",
+    "card" : "Card 181",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 159 ]
+  }, {
+    "id" : 182,
+    "name" : "Operation 182",
+    "card" : "Card 182",
+    "duration" : 2,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 147 ]
+  }, {
+    "id" : 183,
+    "name" : "Operation 183",
+    "card" : "Card 183",
+    "duration" : 1,
+    "location" : 11,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 137 ]
+  }, {
+    "id" : 184,
+    "name" : "Operation 184",
+    "card" : "Card 184",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 103 ]
+  }, {
+    "id" : 185,
+    "name" : "Operation 185",
+    "card" : "Card 185",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 113 ]
+  }, {
+    "id" : 186,
+    "name" : "Operation 186",
+    "card" : "Card 186",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 188 ]
+  }, {
+    "id" : 187,
+    "name" : "Operation 187",
+    "card" : "Card 187",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 158 ]
+  }, {
+    "id" : 188,
+    "name" : "Operation 188",
+    "card" : "Card 188",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 154 ]
+  }, {
+    "id" : 189,
+    "name" : "Operation 189",
+    "card" : "Card 189",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 157 ]
+  }, {
+    "id" : 190,
+    "name" : "Operation 190",
+    "card" : "Card 190",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 156 ]
+  }, {
+    "id" : 191,
+    "name" : "Operation 191",
+    "card" : "Card 191",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 127 ]
+  }, {
+    "id" : 192,
+    "name" : "Operation 192",
+    "card" : "Card 192",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 139 ]
+  }, {
+    "id" : 193,
+    "name" : "Operation 193",
+    "card" : "Card 193",
+    "duration" : 1,
+    "location" : 13,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 192 ]
+  }, {
+    "id" : 194,
+    "name" : "Operation 194",
+    "card" : "Card 194",
+    "duration" : 12,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 197 ]
+  }, {
+    "id" : 195,
+    "name" : "Operation 195",
+    "card" : "Card 195",
+    "duration" : 4,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 103 ]
+  }, {
+    "id" : 196,
+    "name" : "Operation 196",
+    "card" : "Card 196",
+    "duration" : 4,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 202 ]
+  }, {
+    "id" : 197,
+    "name" : "Operation 197",
+    "card" : "Card 197",
+    "duration" : 3,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 201 ]
+  }, {
+    "id" : 198,
+    "name" : "Operation 198",
+    "card" : "Card 198",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 199,
+    "name" : "Operation 199",
+    "card" : "Card 199",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 198 ]
+  }, {
+    "id" : 200,
+    "name" : "Operation 200",
+    "card" : "Card 200",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 201,
+    "name" : "Operation 201",
+    "card" : "Card 201",
+    "duration" : 2,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 196 ]
+  }, {
+    "id" : 202,
+    "name" : "Operation 202",
+    "card" : "Card 202",
+    "duration" : 1,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 203,
+    "name" : "Operation 203",
+    "card" : "Card 203",
+    "duration" : 1,
+    "location" : 8,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 110, 102 ]
+  }, {
+    "id" : 204,
+    "name" : "Operation 204",
+    "card" : "Card 204",
+    "duration" : 32,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 61 ]
+  }, {
+    "id" : 205,
+    "name" : "Operation 205",
+    "card" : "Card 205",
+    "duration" : 4,
+    "location" : 3,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 206,
+    "name" : "Operation 206",
+    "card" : "Card 206",
+    "duration" : 4,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 207,
+    "name" : "Operation 207",
+    "card" : "Card 207",
+    "duration" : 2,
+    "location" : 3,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 208,
+    "name" : "Operation 208",
+    "card" : "Card 208",
+    "duration" : 20,
+    "location" : 12,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 84, 70, 81, 249 ]
+  }, {
+    "id" : 209,
+    "name" : "Operation 209",
+    "card" : "Card 209",
+    "duration" : 4,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 210,
+    "name" : "Operation 210",
+    "card" : "Card 210",
+    "duration" : 4,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 211,
+    "name" : "Operation 211",
+    "card" : "Card 211",
+    "duration" : 3,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 212,
+    "name" : "Operation 212",
+    "card" : "Card 212",
+    "duration" : 2,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 213,
+    "name" : "Operation 213",
+    "card" : "Card 213",
+    "duration" : 2,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 1,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 214,
+    "name" : "Operation 214",
+    "card" : "Card 214",
+    "duration" : 2,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 215,
+    "name" : "Operation 215",
+    "card" : "Card 215",
+    "duration" : 2,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 216,
+    "name" : "Operation 216",
+    "card" : "Card 216",
+    "duration" : 2,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 217,
+    "name" : "Operation 217",
+    "card" : "Card 217",
+    "duration" : 2,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 218,
+    "name" : "Operation 218",
+    "card" : "Card 218",
+    "duration" : 1,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 219,
+    "name" : "Operation 219",
+    "card" : "Card 219",
+    "duration" : 1,
+    "location" : 12,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 220,
+    "name" : "Operation 220",
+    "card" : "Card 220",
+    "duration" : 4,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 194 ]
+  }, {
+    "id" : 221,
+    "name" : "Operation 221",
+    "card" : "Card 221",
+    "duration" : 3,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 231 ]
+  }, {
+    "id" : 222,
+    "name" : "Operation 222",
+    "card" : "Card 222",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 224 ]
+  }, {
+    "id" : 223,
+    "name" : "Operation 223",
+    "card" : "Card 223",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 222 ]
+  }, {
+    "id" : 224,
+    "name" : "Operation 224",
+    "card" : "Card 224",
+    "duration" : 4,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 220 ]
+  }, {
+    "id" : 225,
+    "name" : "Operation 225",
+    "card" : "Card 225",
+    "duration" : 4,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 226,
+    "name" : "Operation 226",
+    "card" : "Card 226",
+    "duration" : 4,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 227,
+    "name" : "Operation 227",
+    "card" : "Card 227",
+    "duration" : 4,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 228,
+    "name" : "Operation 228",
+    "card" : "Card 228",
+    "duration" : 4,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 229,
+    "name" : "Operation 229",
+    "card" : "Card 229",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 223 ]
+  }, {
+    "id" : 230,
+    "name" : "Operation 230",
+    "card" : "Card 230",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 221 ]
+  }, {
+    "id" : 231,
+    "name" : "Operation 231",
+    "card" : "Card 231",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 229 ]
+  }, {
+    "id" : 232,
+    "name" : "Operation 232",
+    "card" : "Card 232",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 233 ]
+  }, {
+    "id" : 233,
+    "name" : "Operation 233",
+    "card" : "Card 233",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 230 ]
+  }, {
+    "id" : 234,
+    "name" : "Operation 234",
+    "card" : "Card 234",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 1,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 232 ]
+  }, {
+    "id" : 235,
+    "name" : "Operation 235",
+    "card" : "Card 235",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 236,
+    "name" : "Operation 236",
+    "card" : "Card 236",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 237,
+    "name" : "Operation 237",
+    "card" : "Card 237",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 238,
+    "name" : "Operation 238",
+    "card" : "Card 238",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 239,
+    "name" : "Operation 239",
+    "card" : "Card 239",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 240,
+    "name" : "Operation 240",
+    "card" : "Card 240",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 241,
+    "name" : "Operation 241",
+    "card" : "Card 241",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 242,
+    "name" : "Operation 242",
+    "card" : "Card 242",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 243,
+    "name" : "Operation 243",
+    "card" : "Card 243",
+    "duration" : 2,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 244,
+    "name" : "Operation 244",
+    "card" : "Card 244",
+    "duration" : 1,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 245,
+    "name" : "Operation 245",
+    "card" : "Card 245",
+    "duration" : 1,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 246,
+    "name" : "Operation 246",
+    "card" : "Card 246",
+    "duration" : 1,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 247,
+    "name" : "Operation 247",
+    "card" : "Card 247",
+    "duration" : 1,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 248,
+    "name" : "Operation 248",
+    "card" : "Card 248",
+    "duration" : 1,
+    "location" : 9,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 249,
+    "name" : "Operation 249",
+    "card" : "Card 249",
+    "duration" : 8,
+    "location" : 5,
+    "occupancy" : 2,
+    "mass" : 30,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 250,
+    "name" : "Operation 250",
+    "card" : "Card 250",
+    "duration" : 8,
+    "location" : 0,
+    "occupancy" : 2,
+    "mass" : 20,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 251,
+    "name" : "Operation 251",
+    "card" : "Card 251",
+    "duration" : 3,
+    "location" : 0,
+    "occupancy" : 2,
+    "mass" : 50,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 252,
+    "name" : "Operation 252",
+    "card" : "Card 252",
+    "duration" : 4,
+    "location" : 0,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 253,
+    "name" : "Operation 253",
+    "card" : "Card 253",
+    "duration" : 2,
+    "location" : 0,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 254,
+    "name" : "Operation 254",
+    "card" : "Card 254",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 255,
+    "name" : "Operation 255",
+    "card" : "Card 255",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 256,
+    "name" : "Operation 256",
+    "card" : "Card 256",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 257,
+    "name" : "Operation 257",
+    "card" : "Card 257",
+    "duration" : 2,
+    "location" : 0,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 258,
+    "name" : "Operation 258",
+    "card" : "Card 258",
+    "duration" : 4,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 259,
+    "name" : "Operation 259",
+    "card" : "Card 259",
+    "duration" : 4,
+    "location" : 0,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 260,
+    "name" : "Operation 260",
+    "card" : "Card 260",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 261,
+    "name" : "Operation 261",
+    "card" : "Card 261",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 262,
+    "name" : "Operation 262",
+    "card" : "Card 262",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 263,
+    "name" : "Operation 263",
+    "card" : "Card 263",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 264,
+    "name" : "Operation 264",
+    "card" : "Card 264",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 265,
+    "name" : "Operation 265",
+    "card" : "Card 265",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 266,
+    "name" : "Operation 266",
+    "card" : "Card 266",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 267,
+    "name" : "Operation 267",
+    "card" : "Card 267",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 268,
+    "name" : "Operation 268",
+    "card" : "Card 268",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 269,
+    "name" : "Operation 269",
+    "card" : "Card 269",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 270,
+    "name" : "Operation 270",
+    "card" : "Card 270",
+    "duration" : 2,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 271,
+    "name" : "Operation 271",
+    "card" : "Card 271",
+    "duration" : 1,
+    "location" : 0,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 272,
+    "name" : "Operation 272",
+    "card" : "Card 272",
+    "duration" : 1,
+    "location" : 0,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 273,
+    "name" : "Operation 273",
+    "card" : "Card 273",
+    "duration" : 1,
+    "location" : 0,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 274,
+    "name" : "Operation 274",
+    "card" : "Card 274",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 275,
+    "name" : "Operation 275",
+    "card" : "Card 275",
+    "duration" : 1,
+    "location" : 0,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 276,
+    "name" : "Operation 276",
+    "card" : "Card 276",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 277,
+    "name" : "Operation 277",
+    "card" : "Card 277",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 278,
+    "name" : "Operation 278",
+    "card" : "Card 278",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 279,
+    "name" : "Operation 279",
+    "card" : "Card 279",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 280,
+    "name" : "Operation 280",
+    "card" : "Card 280",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 281,
+    "name" : "Operation 281",
+    "card" : "Card 281",
+    "duration" : 1,
+    "location" : 0,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 282,
+    "name" : "Operation 282",
+    "card" : "Card 282",
+    "duration" : 1,
+    "location" : 0,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 283,
+    "name" : "Operation 283",
+    "card" : "Card 283",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 284,
+    "name" : "Operation 284",
+    "card" : "Card 284",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 285,
+    "name" : "Operation 285",
+    "card" : "Card 285",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 286,
+    "name" : "Operation 286",
+    "card" : "Card 286",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 287,
+    "name" : "Operation 287",
+    "card" : "Card 287",
+    "duration" : 1,
+    "location" : 0,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 288,
+    "name" : "Operation 288",
+    "card" : "Card 288",
+    "duration" : 1,
+    "location" : 5,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 289,
+    "name" : "Operation 289",
+    "card" : "Card 289",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 290,
+    "name" : "Operation 290",
+    "card" : "Card 290",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 291,
+    "name" : "Operation 291",
+    "card" : "Card 291",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 2,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 292,
+    "name" : "Operation 292",
+    "card" : "Card 292",
+    "duration" : 4,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 293,
+    "name" : "Operation 293",
+    "card" : "Card 293",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 294,
+    "name" : "Operation 294",
+    "card" : "Card 294",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 295,
+    "name" : "Operation 295",
+    "card" : "Card 295",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 296,
+    "name" : "Operation 296",
+    "card" : "Card 296",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 297,
+    "name" : "Operation 297",
+    "card" : "Card 297",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 298,
+    "name" : "Operation 298",
+    "card" : "Card 298",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 299,
+    "name" : "Operation 299",
+    "card" : "Card 299",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 300,
+    "name" : "Operation 300",
+    "card" : "Card 300",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 301,
+    "name" : "Operation 301",
+    "card" : "Card 301",
+    "duration" : 2,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 302,
+    "name" : "Operation 302",
+    "card" : "Card 302",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 303,
+    "name" : "Operation 303",
+    "card" : "Card 303",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 304,
+    "name" : "Operation 304",
+    "card" : "Card 304",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 305,
+    "name" : "Operation 305",
+    "card" : "Card 305",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 306,
+    "name" : "Operation 306",
+    "card" : "Card 306",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 307,
+    "name" : "Operation 307",
+    "card" : "Card 307",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 308,
+    "name" : "Operation 308",
+    "card" : "Card 308",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 309,
+    "name" : "Operation 309",
+    "card" : "Card 309",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 310,
+    "name" : "Operation 310",
+    "card" : "Card 310",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 311,
+    "name" : "Operation 311",
+    "card" : "Card 311",
+    "duration" : 1,
+    "location" : 7,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 312,
+    "name" : "Operation 312",
+    "card" : "Card 312",
+    "duration" : 2,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 313,
+    "name" : "Operation 313",
+    "card" : "Card 313",
+    "duration" : 2,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 314,
+    "name" : "Operation 314",
+    "card" : "Card 314",
+    "duration" : 2,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 315,
+    "name" : "Operation 315",
+    "card" : "Card 315",
+    "duration" : 2,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 316,
+    "name" : "Operation 316",
+    "card" : "Card 316",
+    "duration" : 2,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 317,
+    "name" : "Operation 317",
+    "card" : "Card 317",
+    "duration" : 2,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 318,
+    "name" : "Operation 318",
+    "card" : "Card 318",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 319,
+    "name" : "Operation 319",
+    "card" : "Card 319",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 320,
+    "name" : "Operation 320",
+    "card" : "Card 320",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 321,
+    "name" : "Operation 321",
+    "card" : "Card 321",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 322,
+    "name" : "Operation 322",
+    "card" : "Card 322",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 323,
+    "name" : "Operation 323",
+    "card" : "Card 323",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 324,
+    "name" : "Operation 324",
+    "card" : "Card 324",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 325,
+    "name" : "Operation 325",
+    "card" : "Card 325",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 326,
+    "name" : "Operation 326",
+    "card" : "Card 326",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 327,
+    "name" : "Operation 327",
+    "card" : "Card 327",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 328,
+    "name" : "Operation 328",
+    "card" : "Card 328",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 329,
+    "name" : "Operation 329",
+    "card" : "Card 329",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 330,
+    "name" : "Operation 330",
+    "card" : "Card 330",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 331,
+    "name" : "Operation 331",
+    "card" : "Card 331",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 332,
+    "name" : "Operation 332",
+    "card" : "Card 332",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 333,
+    "name" : "Operation 333",
+    "card" : "Card 333",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 334,
+    "name" : "Operation 334",
+    "card" : "Card 334",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 335,
+    "name" : "Operation 335",
+    "card" : "Card 335",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 336,
+    "name" : "Operation 336",
+    "card" : "Card 336",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 337,
+    "name" : "Operation 337",
+    "card" : "Card 337",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 338,
+    "name" : "Operation 338",
+    "card" : "Card 338",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 339,
+    "name" : "Operation 339",
+    "card" : "Card 339",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 340,
+    "name" : "Operation 340",
+    "card" : "Card 340",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 341,
+    "name" : "Operation 341",
+    "card" : "Card 341",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 342,
+    "name" : "Operation 342",
+    "card" : "Card 342",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 343,
+    "name" : "Operation 343",
+    "card" : "Card 343",
+    "duration" : 1,
+    "location" : 4,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 344,
+    "name" : "Operation 344",
+    "card" : "Card 344",
+    "duration" : 4,
+    "location" : 6,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 345,
+    "name" : "Operation 345",
+    "card" : "Card 345",
+    "duration" : 4,
+    "location" : 6,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 346,
+    "name" : "Operation 346",
+    "card" : "Card 346",
+    "duration" : 4,
+    "location" : 6,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 347,
+    "name" : "Operation 347",
+    "card" : "Card 347",
+    "duration" : 3,
+    "location" : 6,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 348,
+    "name" : "Operation 348",
+    "card" : "Card 348",
+    "duration" : 2,
+    "location" : 6,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 349,
+    "name" : "Operation 349",
+    "card" : "Card 349",
+    "duration" : 2,
+    "location" : 6,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 350,
+    "name" : "Operation 350",
+    "card" : "Card 350",
+    "duration" : 2,
+    "location" : 6,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 351,
+    "name" : "Operation 351",
+    "card" : "Card 351",
+    "duration" : 4,
+    "location" : 2,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 352,
+    "name" : "Operation 352",
+    "card" : "Card 352",
+    "duration" : 4,
+    "location" : 2,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 353,
+    "name" : "Operation 353",
+    "card" : "Card 353",
+    "duration" : 4,
+    "location" : 2,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 354,
+    "name" : "Operation 354",
+    "card" : "Card 354",
+    "duration" : 4,
+    "location" : 2,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 355,
+    "name" : "Operation 355",
+    "card" : "Card 355",
+    "duration" : 2,
+    "location" : 2,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 356,
+    "name" : "Operation 356",
+    "card" : "Card 356",
+    "duration" : 1,
+    "location" : 2,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 357,
+    "name" : "Operation 357",
+    "card" : "Card 357",
+    "duration" : 1,
+    "location" : 2,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 358,
+    "name" : "Operation 358",
+    "card" : "Card 358",
+    "duration" : 1,
+    "location" : 2,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 359,
+    "name" : "Operation 359",
+    "card" : "Card 359",
+    "duration" : 6,
+    "location" : 1,
+    "occupancy" : 2,
+    "mass" : 5,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 360,
+    "name" : "Operation 360",
+    "card" : "Card 360",
+    "duration" : 10,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 361,
+    "name" : "Operation 361",
+    "card" : "Card 361",
+    "duration" : 6,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 362,
+    "name" : "Operation 362",
+    "card" : "Card 362",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 2,
+    "mass" : 10,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 363,
+    "name" : "Operation 363",
+    "card" : "Card 363",
+    "duration" : 2,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 364,
+    "name" : "Operation 364",
+    "card" : "Card 364",
+    "duration" : 2,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ 53, 52 ]
+  }, {
+    "id" : 365,
+    "name" : "Operation 365",
+    "card" : "Card 365",
+    "duration" : 2,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 366,
+    "name" : "Operation 366",
+    "card" : "Card 366",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 367,
+    "name" : "Operation 367",
+    "card" : "Card 367",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 368,
+    "name" : "Operation 368",
+    "card" : "Card 368",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 369,
+    "name" : "Operation 369",
+    "card" : "Card 369",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 370,
+    "name" : "Operation 370",
+    "card" : "Card 370",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 371,
+    "name" : "Operation 371",
+    "card" : "Card 371",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 372,
+    "name" : "Operation 372",
+    "card" : "Card 372",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 373,
+    "name" : "Operation 373",
+    "card" : "Card 373",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 374,
+    "name" : "Operation 374",
+    "card" : "Card 374",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 375,
+    "name" : "Operation 375",
+    "card" : "Card 375",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 376,
+    "name" : "Operation 376",
+    "card" : "Card 376",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 377,
+    "name" : "Operation 377",
+    "card" : "Card 377",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 378,
+    "name" : "Operation 378",
+    "card" : "Card 378",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 379,
+    "name" : "Operation 379",
+    "card" : "Card 379",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B1",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 380,
+    "name" : "Operation 380",
+    "card" : "Card 380",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 381,
+    "name" : "Operation 381",
+    "card" : "Card 381",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 382,
+    "name" : "Operation 382",
+    "card" : "Card 382",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 383,
+    "name" : "Operation 383",
+    "card" : "Card 383",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 384,
+    "name" : "Operation 384",
+    "card" : "Card 384",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 385,
+    "name" : "Operation 385",
+    "card" : "Card 385",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 386,
+    "name" : "Operation 386",
+    "card" : "Card 386",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 387,
+    "name" : "Operation 387",
+    "card" : "Card 387",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 388,
+    "name" : "Operation 388",
+    "card" : "Card 388",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 389,
+    "name" : "Operation 389",
+    "card" : "Card 389",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 390,
+    "name" : "Operation 390",
+    "card" : "Card 390",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 391,
+    "name" : "Operation 391",
+    "card" : "Card 391",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 392,
+    "name" : "Operation 392",
+    "card" : "Card 392",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 393,
+    "name" : "Operation 393",
+    "card" : "Card 393",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 394,
+    "name" : "Operation 394",
+    "card" : "Card 394",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 395,
+    "name" : "Operation 395",
+    "card" : "Card 395",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 396,
+    "name" : "Operation 396",
+    "card" : "Card 396",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 397,
+    "name" : "Operation 397",
+    "card" : "Card 397",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ {
+      "item" : "B2",
+      "quantity" : 1
+    } ],
+    "precedences" : [ ]
+  }, {
+    "id" : 398,
+    "name" : "Operation 398",
+    "card" : "Card 398",
+    "duration" : 1,
+    "location" : 1,
+    "occupancy" : 1,
+    "mass" : 0,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  }, {
+    "id" : 399,
+    "name" : "Operation 399",
+    "card" : "Card 399",
+    "duration" : 64,
+    "location" : 13,
+    "occupancy" : 4,
+    "mass" : 1,
+    "requirements" : [ ],
+    "precedences" : [ ]
+  } ]
+}
