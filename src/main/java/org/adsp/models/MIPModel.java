@@ -1,7 +1,7 @@
 package org.adsp.models;
 
 import ilog.concert.*;
-import ilog.cplex.*;
+import ilog.cplex.IloCplex;
 import org.adsp.datamodel.*;
 import org.adsp.tools.JsonReader;
 import org.adsp.tools.JsonWriter;
@@ -76,8 +76,7 @@ public class MIPModel {
             //Variables:
             tskProcess = new IloIntVar[nTasks][nTasks]; //Task processing variables (1 if task i is processed during event e)
             tskProcess0 = new IloIntVar[nTasks]; //Task processing variables for event 0.
-            tskStart = new IloIntVar[nOperations][nTasks]; //Task start variables (1 if task i starts at event e)
-            tskEnd = new IloIntVar[nOperations][nTasks]; // Task end variables (end time if task i is processed at event e)
+            tskStart = new IloIntVar[nTasks][nTasks]; //Task start variables (1 if task i starts at event e)
             balanceAF = new IloIntVar[nTasks]; //Aft - Forward balance variables
             balanceLR = new IloIntVar[nTasks]; //Left - Right balance variables
             time = new IloIntVar[nTasks]; //Time variables (time at which event e happens)
@@ -102,7 +101,6 @@ public class MIPModel {
             for (int i = 0; i < nOperations; i++) {
                 for (int e = 0; e < nTasks; e++) {
                     tskStart[i][e] = cplex.boolVar("s_" + i + "," + e);
-                    tskEnd[i][e] = cplex.intVar(-2 * instance.maxTime(), instance.maxTime(), "e_" + i + "," + e);
                 }
             }
 
@@ -118,38 +116,45 @@ public class MIPModel {
             //RCPSP
             for (int e = 1; e < nTasks; e++) {
                 //Ensures that events are set in increasing order of time:
-                cplex.add(cplex.ge(cplex.diff(time[e], time[e - 1]), 0));
+                cplex.add(cplex.ge(time[e], time[e-1]));
+            }
+
+            for (int i = 0; i < nTasks; i++) {
+                for (int e = 0; e < nTasks; e++) {
+                    //Links task start variables with task processing variables:
+                    cplex.add(cplex.ge(tskStart[i][e], cplex.diff(tskProcess[i][e], e > 0 ? tskProcess[i][e - 1] : tskProcess0[i])));
+                }
             }
 
             for (int i = 0; i < nTasks; i++) {
                 int duration = i < nOperations ? instance.operations()[i].duration() : unavailabilities[i - nOperations].end() - unavailabilities[i - nOperations].start();
 
-                //Ensures that each task is processed during at least 1 event:
+                //Ensures that each task is processed during at least 1 event: sum_e taskProcess[i,e] >= 1
                 cplex.add(cplex.ge(cplex.sum(tskProcess[i]), 1));
 
                 for (int e = 1; e < nTasks; e++) {
                     //Makes sure that tasks are processed as a contiguous block of events:
-                    cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], 0, e)), cplex.prod(e, cplex.diff(1, cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), 0));
+                    cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], 0, e)), cplex.prod(e, cplex.diff(1, tskStart[i][e]))), 0));
 
                     //Makes sure that tasks are processed as a contiguous block of events:
-                    cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], e, nTasks)), cplex.prod(nTasks - e, cplex.sum(1, cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), 0));
+                    cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], e, nTasks)), cplex.prod(nTasks - e, cplex.sum(1, tskStart[i][e]))), 0));
 
                     for (int f = 0; f < e; f++) {
                         //Links task processing variables with time variables:
-                        cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(cplex.diff(tskProcess[i][f], f > 0 ? tskProcess[i][f - 1] : tskProcess0[i]), cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), -duration));
+                        cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(tskStart[i][f], tskStart[i][e]))), -duration));
                     }
                 }
             }
 
             for (int i = 0; i < nOperations; i++) {
                 for (int e = 0; e < nTasks; e++) {
-                    //Links the end time variables with the task processing and time variables:
-                    cplex.add(cplex.le(tskEnd[i][e], cplex.prod(instance.maxTime(), cplex.diff(tskProcess[i][e], e > 0 ? tskProcess[i][e - 1] : tskProcess0[i]))));
-                    cplex.add(cplex.le(tskEnd[i][e], cplex.sum(time[e], instance.operations()[i].duration())));
-                    cplex.add(cplex.ge(tskEnd[i][e], cplex.diff(cplex.sum(time[e], instance.operations()[i].duration()), cplex.prod(instance.maxTime(), cplex.diff(1, cplex.diff(tskProcess[i][e], e > 0 ? tskProcess[i][e - 1] : tskProcess0[i]))))));
+                    int di =  instance.operations()[i].duration();
+                    // makespan >= (time[e] + di) - H * (1-tskStart[i,e])
+                    cplex.add(cplex.ge(mksp,
+                            cplex.diff(cplex.sum(time[e], di),
+                                    cplex.prod(instance.maxTime(), cplex.diff(1, tskStart[i][e])))));
 
-                    //Links the makespan variable with the time variables:
-                    cplex.add(cplex.ge(mksp, tskEnd[i][e]));
+
                 }
             }
 
@@ -189,12 +194,6 @@ public class MIPModel {
                     IntExprList starts = new IntExprList();
 
                     for (int i = 0; i < nOperations; i++) {
-                        //Ensures task start variables are positive:
-                        cplex.add(cplex.ge(tskStart[i][e], 0));
-
-                        //Links task start variables with task processing variables:
-                        cplex.add(cplex.ge(tskStart[i][e], cplex.diff(tskProcess[i][e], e > 0 ? tskProcess[i][e - 1] : tskProcess0[i])));
-
                         starts.add(tskStart[i][e]);
                     }
 
