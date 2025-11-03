@@ -122,6 +122,8 @@ public class MIPModel {
                 for (int e = 0; e < nTasks; e++) {
                     //Links task start variables with task processing variables:
                     cplex.add(cplex.ge(tskStart[i][e], cplex.diff(tskProcess[i][e], e > 0 ? tskProcess[i][e - 1] : tskProcess0[i])));
+                    //cplex.add(cplex.le(tskStart[i][e], tskProcess[i][e]));
+                    if (e > 0) cplex.add(cplex.le(tskStart[i][e], cplex.diff(1, tskProcess[i][e-1])));
                 }
             }
 
@@ -144,7 +146,7 @@ public class MIPModel {
                     for (int f = 0; f < e; f++) {
                         //Links task processing variables with time variables:
                         //cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(tskStart[i][f], tskStart[i][e]))), -duration));
-                          cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(cplex.diff(tskProcess[i][f], f > 0 ? tskProcess[i][f - 1] : tskProcess0[i]), cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), -duration));
+                        cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(cplex.diff(tskProcess[i][f], f > 0 ? tskProcess[i][f - 1] : tskProcess0[i]), cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), -duration));
                     }
                 }
             }
