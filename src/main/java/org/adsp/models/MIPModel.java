@@ -136,16 +136,12 @@ public class MIPModel {
                 for (int e = 1; e < nTasks; e++) {
                     //Makes sure that tasks are processed as a contiguous block of events:
                     cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], 0, e)), cplex.prod(e, cplex.diff(1, tskStart[i][e]))), 0));
-                    //cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], 0, e)), cplex.prod(e, cplex.diff(1, cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), 0));
-
 
                     //Makes sure that tasks are processed as a contiguous block of events:
                     cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], e, nTasks)), cplex.prod(nTasks - e, cplex.sum(1, tskStart[i][e]))), 0));
-                    //cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], e, nTasks)), cplex.prod(nTasks - e, cplex.sum(1, cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), 0));
 
                     for (int f = 0; f < e; f++) {
                         //Links task processing variables with time variables:
-                        //cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(tskStart[i][f], tskStart[i][e]))), -duration));
                         cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(cplex.diff(tskProcess[i][f], f > 0 ? tskProcess[i][f - 1] : tskProcess0[i]), cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), -duration));
                     }
                 }
