@@ -34,7 +34,6 @@ public class MIPModel {
     private IloIntVar[][] tskProcess; //task processing binary variables (z_ie)
     private IloIntVar[] tskProcess0;
     private IloIntVar[][] tskStart; //Task start binary variables (s_ie)
-    private IloIntVar[][] tskEnd; //Task end continuous variables (e_ie)
     private IloIntVar[] balanceAF; //Aft - Forward balance variables
     private IloIntVar[] balanceLR; //Left - Right balance variables
     private IloIntVar balanceAF0;
@@ -98,7 +97,7 @@ public class MIPModel {
                 }
             }
 
-            for (int i = 0; i < nOperations; i++) {
+            for (int i = 0; i < nTasks; i++) {
                 for (int e = 0; e < nTasks; e++) {
                     tskStart[i][e] = cplex.boolVar("s_" + i + "," + e);
                 }
@@ -135,13 +134,17 @@ public class MIPModel {
                 for (int e = 1; e < nTasks; e++) {
                     //Makes sure that tasks are processed as a contiguous block of events:
                     cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], 0, e)), cplex.prod(e, cplex.diff(1, tskStart[i][e]))), 0));
+                    //cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], 0, e)), cplex.prod(e, cplex.diff(1, cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), 0));
+
 
                     //Makes sure that tasks are processed as a contiguous block of events:
                     cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], e, nTasks)), cplex.prod(nTasks - e, cplex.sum(1, tskStart[i][e]))), 0));
+                    //cplex.add(cplex.le(cplex.diff(cplex.sum(Arrays.copyOfRange(tskProcess[i], e, nTasks)), cplex.prod(nTasks - e, cplex.sum(1, cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), 0));
 
                     for (int f = 0; f < e; f++) {
                         //Links task processing variables with time variables:
-                        cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(tskStart[i][f], tskStart[i][e]))), -duration));
+                        //cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(tskStart[i][f], tskStart[i][e]))), -duration));
+                          cplex.add(cplex.ge(cplex.diff(cplex.diff(time[e], time[f]), cplex.prod(duration, cplex.diff(cplex.diff(tskProcess[i][f], f > 0 ? tskProcess[i][f - 1] : tskProcess0[i]), cplex.diff(tskProcess[i][e], tskProcess[i][e - 1])))), -duration));
                     }
                 }
             }
