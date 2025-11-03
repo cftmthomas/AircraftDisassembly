@@ -121,8 +121,9 @@ public class MIPModel {
             for (int i = 0; i < nTasks; i++) {
                 for (int e = 0; e < nTasks; e++) {
                     //Links task start variables with task processing variables:
+                    // tskStart[i][e] >= tskProcess[i][e] - tskProcess[i][e-1]
                     cplex.add(cplex.ge(tskStart[i][e], cplex.diff(tskProcess[i][e], e > 0 ? tskProcess[i][e - 1] : tskProcess0[i])));
-                    //cplex.add(cplex.le(tskStart[i][e], tskProcess[i][e]));
+                    // tskStart[i][e] <= 1 - tskProcess[i][e-1]
                     if (e > 0) cplex.add(cplex.le(tskStart[i][e], cplex.diff(1, tskProcess[i][e-1])));
                 }
             }
@@ -299,10 +300,12 @@ public class MIPModel {
 
                 for (int e = 0; e < nTasks; e++) {
                     //Setting start time windows of dummy unavailability task:
-                    cplex.add(cplex.ge(time[e], cplex.prod(tskProcess[u + nOperations][e], unavailable.start())));
+                    //cplex.add(cplex.ge(time[e], cplex.prod(tskProcess[u + nOperations][e], unavailable.start())));
+                    cplex.add(cplex.ge(time[e], cplex.prod(tskStart[u+nOperations][e], unavailable.start())));
                     //Setting end time windows of dummy unavailability task:
-                    IloIntExpr diff = cplex.diff(tskProcess[u + nOperations][e], e > 0 ? tskProcess[u + nOperations][e - 1] : tskProcess0[u + nOperations]);
-                    cplex.add(cplex.le(time[e], cplex.sum(cplex.prod(unavailable.start(), diff), cplex.prod(instance.maxTime(), cplex.diff(1, diff)))));
+
+                    cplex.add(cplex.le(time[e], cplex.sum(cplex.prod(unavailable.start(), tskStart[u+nOperations][e]), cplex.prod(instance.maxTime(), cplex.diff(1, tskStart[u+nOperations][e])))));
+
                 }
             }
 
